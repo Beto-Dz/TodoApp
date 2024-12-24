@@ -23,7 +23,7 @@ export const AddTodo = () => {
   };
 
   return (
-    <form onSubmit={handlerOnSubmit}>
+    <form onSubmit={handlerOnSubmit} className="AddTodoForm" >
       <input
         type="text"
         name="todoDescription"
@@ -32,6 +32,7 @@ export const AddTodo = () => {
         onChange={handlerOnInputChange}
         placeholder="¿Qué hay que hacer?"
         required
+        className="AddTodoInput"
       />
     </form>
   );
