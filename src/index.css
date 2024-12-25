@@ -97,6 +97,8 @@ body {
   gap: 0.5rem;
   overflow-y: scroll;
   scrollbar-width: none;
+  border-radius: var(--radius);
+  border: .5px solid rgba(245, 245, 245, 0.08);
 }
 
 .TodoListTittle {
@@ -110,6 +112,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  font-size: clamp(1rem, 50vw, 1.3rem);
 }
 
 .TodoItem {
@@ -121,7 +124,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
   cursor: pointer;
 }
 

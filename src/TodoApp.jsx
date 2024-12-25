@@ -8,9 +8,9 @@ export const TodoApp = () => {
       <TodoContextProvider>
         <AddTodo />
         <main className="main">
-          <TodoList filter={true} filterFactor={true}  title='Terminadas'/>
-          <TodoList title='Todas'/>
           <TodoList filter={true} title="Pendientes"/>
+          <TodoList title='Todas'/>
+          <TodoList filter={true} filterFactor={true}  title='Terminadas'/>
         </main>
       </TodoContextProvider>
     </>
