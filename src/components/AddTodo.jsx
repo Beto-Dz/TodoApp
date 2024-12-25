@@ -15,11 +15,15 @@ export const AddTodo = () => {
   const handlerOnSubmit = (e) => {
     //previene el comportamiento por defecto
     e.preventDefault();
+
+    if(todoDescription.trim().length < 3) return
+
     handleAddTodo({
       id: new Date().getTime() * 3,
       description: todoDescription,
       done: false,
     });
+    handlerOnReset();
   };
 
   return (
@@ -31,6 +35,7 @@ export const AddTodo = () => {
         value={todoDescription}
         onChange={handlerOnInputChange}
         placeholder="¿Qué hay que hacer?"
+        autoFocus
         required
         className="AddTodoInput"
       />

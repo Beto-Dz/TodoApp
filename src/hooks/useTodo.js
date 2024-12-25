@@ -19,7 +19,6 @@ export const useTodo = () => {
 
   // funcion de ayuda para agregar todo al estado
   const handleAddTodo = (todo = {}) => {
-    console.log('todo:' , todo)
     dispatch({
       type: "[TODO] add todo",
       payload: todo,
@@ -42,10 +41,18 @@ export const useTodo = () => {
     });
   };
 
+  // funcion de ayuda para eliminar los todos compleados
+  const handleDropCompletedTodos = () => {
+    dispatch({
+      type: "[TODO] drop todos completed"
+    })
+  }
+
   return {
     todos,
     handleAddTodo,
     handleToggleTodo,
     handleDropTodo,
+    handleDropCompletedTodos
   };
 };

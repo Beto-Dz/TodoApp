@@ -7,7 +7,11 @@ export const TodoApp = () => {
     <>
       <TodoContextProvider>
         <AddTodo />
-        <TodoList />
+        <main className="main">
+          <TodoList filter={true} filterFactor={true}  title='Terminados'/>
+          <TodoList title='Todos'/>
+          <TodoList filter={true} title="Pendientes"/>
+        </main>
       </TodoContextProvider>
     </>
   );
