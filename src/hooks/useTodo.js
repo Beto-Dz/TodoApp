@@ -48,11 +48,21 @@ export const useTodo = () => {
     })
   }
 
+  // funcion de ayuda para actualizar descripcion de un todo
+  const handleUpdateTodo = (todo = {}) => {
+    dispatch({
+      type: "[TODO] update description todo",
+      payload: todo.id,
+      handlePayload: todo.description
+    })
+  }
+
   return {
     todos,
     handleAddTodo,
     handleToggleTodo,
     handleDropTodo,
-    handleDropCompletedTodos
+    handleDropCompletedTodos,
+    handleUpdateTodo
   };
 };

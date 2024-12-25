@@ -8,8 +8,8 @@ export const TodoApp = () => {
       <TodoContextProvider>
         <AddTodo />
         <main className="main">
-          <TodoList filter={true} filterFactor={true}  title='Terminados'/>
-          <TodoList title='Todos'/>
+          <TodoList filter={true} filterFactor={true}  title='Terminadas'/>
+          <TodoList title='Todas'/>
           <TodoList filter={true} title="Pendientes"/>
         </main>
       </TodoContextProvider>

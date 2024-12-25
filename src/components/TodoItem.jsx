@@ -4,12 +4,12 @@ import trash from '../assets/trash.svg'
 import like from '../assets/like.svg'
 import dislike from '../assets/dislike.svg'
 
-export const TodoItem = ({ id, description, done }) => {
+export const TodoItem = ({ id, description, done, handleSetInformationModal }) => {
   // uso de contexto
   const {handleToggleTodo, handleDropTodo} = useContext(TodoContext);
 
   return (
-    <li className="TodoItem">
+    <li className="TodoItem" onDoubleClick={() => {handleSetInformationModal({id, description, done})}}>
       <span className="TodoItemText">
         {description}
       </span>
