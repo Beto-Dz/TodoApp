@@ -1,8 +1,25 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TodoApp desarrollada en react, aplicando lo aprendido en el curso de Fernando Herrera, donde utilicé hooks como:
+- useState
+- useEffect
+- useReducer
+- useContext
 
-Currently, two official plugins are available:
+Además, las tareas son guardadas en el localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Características:
+- agregar tarea
+- actualizar descripción de tarea
+- actualizar estado de tarea
+- eliminar tarea
+- Diseño responsivo
+
+
+Resultados:
+![imagen de resultado](./public/image.png)
+![imagen de resultado editar](./public/imageEdit.png)
+![imagen de resultado post editar](./public/image.png)
+
+
